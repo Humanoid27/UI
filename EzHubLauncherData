@@ -1,8 +1,5 @@
 {
-    "NewsData": [
-        [1, "IDK LOL"]
-
-    ],
+    "NewsData": [],
     "StatusData": {
         "EzHub": "Online",
         "EzAPI": "Online",
