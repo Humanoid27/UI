@@ -2067,7 +2067,7 @@ functionaliseSearchBar(EzHub.LocalLibFrame.SearchFrame.SearchBar, EzHub.LocalLib
 
 local defaultTheme = {
 
-	ThemeIndex = 	1,
+	ThemeIndex = 	2,
 
 	Primary = 		{25, 25, 25},
 	Secondary = 	{30, 30, 30},
