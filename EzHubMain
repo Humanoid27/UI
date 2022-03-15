@@ -16,11 +16,9 @@ local EzHub = {
 	Frame_2 = Instance.new("Frame"),
 	UICorner_3 = Instance.new("UICorner"),
 	UIPadding = Instance.new("UIPadding"),
-	ExclusivesV2Btn = Instance.new("TextButton"),
 	UICorner_4 = Instance.new("UICorner"),
 	Frame_3 = Instance.new("Frame"),
 	UICorner_5 = Instance.new("UICorner"),
-	RepostedBtn = Instance.new("TextButton"),
 	UICorner_6 = Instance.new("UICorner"),
 	Frame_4 = Instance.new("Frame"),
 	UICorner_7 = Instance.new("UICorner"),
@@ -28,7 +26,6 @@ local EzHub = {
 	UICorner_8 = Instance.new("UICorner"),
 	Frame_5 = Instance.new("Frame"),
 	UICorner_9 = Instance.new("UICorner"),
-	ExclusivesBtn = Instance.new("TextButton"),
 	UICorner_10 = Instance.new("UICorner"),
 	Frame_6 = Instance.new("Frame"),
 	UICorner_11 = Instance.new("UICorner"),
@@ -317,47 +314,8 @@ do
 	EzHub.UIPadding.PaddingBottom = UDim.new(0, 15)
 	EzHub.UIPadding.PaddingTop = UDim.new(0, 15)
 
-	EzHub.ExclusivesV2Btn.Name = "ExclusivesV2Btn"
-	EzHub.ExclusivesV2Btn.Parent = EzHub.NavFrame
-	EzHub.ExclusivesV2Btn.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
-	EzHub.ExclusivesV2Btn.BorderSizePixel = 0
-	EzHub.ExclusivesV2Btn.LayoutOrder = 2
-	EzHub.ExclusivesV2Btn.Size = UDim2.new(0, 200, 0, 50)
-	EzHub.ExclusivesV2Btn.ZIndex = 3
-	EzHub.ExclusivesV2Btn.Font = Enum.Font.SourceSans
-	EzHub.ExclusivesV2Btn.Text = "Exclusives V2"
-	EzHub.ExclusivesV2Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
-	EzHub.ExclusivesV2Btn.TextSize = 14.000
-
-	EzHub.UICorner_4.CornerRadius = UDim.new(0, 3)
-	EzHub.UICorner_4.Parent = EzHub.ExclusivesV2Btn
-
-	EzHub.Frame_3.Parent = EzHub.ExclusivesV2Btn
-	EzHub.Frame_3.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
-	EzHub.Frame_3.Size = UDim2.new(0, 2, 1, 0)
-	EzHub.Frame_3.ZIndex = 4
-
 	EzHub.UICorner_5.Parent = EzHub.Frame_3
 
-	EzHub.RepostedBtn.Name = "RepostedBtn"
-	EzHub.RepostedBtn.Parent = EzHub.NavFrame
-	EzHub.RepostedBtn.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
-	EzHub.RepostedBtn.BorderSizePixel = 0
-	EzHub.RepostedBtn.LayoutOrder = 4
-	EzHub.RepostedBtn.Size = UDim2.new(0, 200, 0, 50)
-	EzHub.RepostedBtn.ZIndex = 3
-	EzHub.RepostedBtn.Font = Enum.Font.SourceSans
-	EzHub.RepostedBtn.Text = "Reposted"
-	EzHub.RepostedBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-	EzHub.RepostedBtn.TextSize = 14.000
-
-	EzHub.UICorner_6.CornerRadius = UDim.new(0, 3)
-	EzHub.UICorner_6.Parent = EzHub.RepostedBtn
-
-	EzHub.Frame_4.Parent = EzHub.RepostedBtn
-	EzHub.Frame_4.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
-	EzHub.Frame_4.Size = UDim2.new(0, 2, 1, 0)
-	EzHub.Frame_4.ZIndex = 4
 
 	EzHub.UICorner_7.Parent = EzHub.Frame_4
 
@@ -382,27 +340,7 @@ do
 	EzHub.Frame_5.ZIndex = 4
 
 	EzHub.UICorner_9.Parent = EzHub.Frame_5
-
-	EzHub.ExclusivesBtn.Name = "ExclusivesBtn"
-	EzHub.ExclusivesBtn.Parent = EzHub.NavFrame
-	EzHub.ExclusivesBtn.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
-	EzHub.ExclusivesBtn.BorderSizePixel = 0
-	EzHub.ExclusivesBtn.LayoutOrder = 3
-	EzHub.ExclusivesBtn.Size = UDim2.new(0, 200, 0, 50)
-	EzHub.ExclusivesBtn.ZIndex = 3
-	EzHub.ExclusivesBtn.Font = Enum.Font.SourceSans
-	EzHub.ExclusivesBtn.Text = "Exclusives V1"
-	EzHub.ExclusivesBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-	EzHub.ExclusivesBtn.TextSize = 14.000
-
-	EzHub.UICorner_10.CornerRadius = UDim.new(0, 3)
-	EzHub.UICorner_10.Parent = EzHub.ExclusivesBtn
-
-	EzHub.Frame_6.Parent = EzHub.ExclusivesBtn
-	EzHub.Frame_6.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
-	EzHub.Frame_6.Size = UDim2.new(0, 2, 1, 0)
-	EzHub.Frame_6.ZIndex = 4
-
+	
 	EzHub.UICorner_11.Parent = EzHub.Frame_6
 
 	EzHub.CreditsBtn.Name = "CreditsBtn"
@@ -2023,12 +1961,9 @@ local function bindTabButton(button, tab)
 	end)
 end
 
-bindTabButton(EzHub.ExclusivesBtn, EzHub.ExclusivesFrame);
-bindTabButton(EzHub.RepostedBtn, EzHub.RepostedFrame);
 bindTabButton(EzHub.HomeBtn, EzHub.HomeFrame);
 bindTabButton(EzHub.CreditsBtn, EzHub.CreditsFrame);
 bindTabButton(EzHub.LocalLibBtn, EzHub.LocalLibFrame);
-bindTabButton(EzHub.ExclusivesV2Btn, EzHub.ExclusivesV2Frame);
 bindTabButton(EzHub.TerminalBtn, EzHub.TerminalFrame);
 
 -------------------------------------------------------------------------------------------------
@@ -2067,12 +2002,12 @@ functionaliseSearchBar(EzHub.LocalLibFrame.SearchFrame.SearchBar, EzHub.LocalLib
 
 local defaultTheme = {
 
-	ThemeIndex = 	1,
+	ThemeIndex = 	2,
 
-	Primary = 		{41, 53, 68},
-	Secondary = 	{35, 47, 62},
-	Tertiary = 		{28, 41, 56},
-	Quaternary = 	{18, 98, 159},
+	Primary = 		{25, 25, 25},
+	Secondary = 	{30, 30, 30},
+	Tertiary = 		{35, 35, 35},
+	Quaternary = 	{40, 40, 40},
 
 	ScrollBarColor = {14, 21, 30},
 	DefaultTextColor = {255, 255, 255}
