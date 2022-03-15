@@ -2067,12 +2067,12 @@ functionaliseSearchBar(EzHub.LocalLibFrame.SearchFrame.SearchBar, EzHub.LocalLib
 
 local defaultTheme = {
 
-	ThemeIndex = 	1,
+	ThemeIndex = 	2,
 
-	Primary = 		{41, 53, 68},
-	Secondary = 	{35, 47, 62},
-	Tertiary = 		{28, 41, 56},
-	Quaternary = 	{18, 98, 159},
+	Primary = 		{25, 25, 25},
+	Secondary = 	{30, 30, 30},
+	Tertiary = 		{35, 35, 35},
+	Quaternary = 	{40, 40, 40},
 
 	ScrollBarColor = {14, 21, 30},
 	DefaultTextColor = {255, 255, 255}
